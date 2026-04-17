@@ -3,25 +3,29 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <div className="home">
-            <div className="hero">
-                <h1>Reduce Food Waste, Save Money</h1>
-                <p>
-                    SaveBite connects restaurants with customers by offering surplus food
-                    at discounted prices before closing time.
-                </p>
+            <section className="hero">
+                <div className="container">
+                    <h1>Save Food. Save Money. Save Earth.</h1>
 
-                <div className="hero-buttons">
-                    <Link to="/deals" className="btn">
-                        View Deals
-                    </Link>
+                    <p>
+                        SaveBite helps restaurants sell surplus food at discounted prices
+                        before closing time. Affordable meals for customers, less waste for
+                        the planet.
+                    </p>
 
-                    <Link to="/dashboard" className="btn secondary">
-                        Restaurant Dashboard
-                    </Link>
+                    <div className="hero-buttons">
+                        <Link to="/deals" className="btn">
+                            Explore Deals
+                        </Link>
+
+                        <Link to="/dashboard" className="btn secondary">
+                            Partner Restaurant
+                        </Link>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="stats">
+            <section className="stats container">
                 <div className="card">
                     <h2>120+</h2>
                     <p>Meals Saved</p>
@@ -29,14 +33,14 @@ function Home() {
 
                 <div className="card">
                     <h2>35+</h2>
-                    <p>Partner Restaurants</p>
+                    <p>Restaurants Joined</p>
                 </div>
 
                 <div className="card">
                     <h2>₹15,000+</h2>
-                    <p>Customer Savings</p>
+                    <p>Total Savings</p>
                 </div>
-            </div>
+            </section>
         </div>
     );
 }
